@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html xmls:th="http://www.thymeleaf.org">
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+<html>
+
+	<head>
+	
+		<title>My awesome webpage</title>
+	
+	</head>
+
+
+<!-- <body>
+<h1>This is going to be a Blog post</h1>
+<p>Hello Hope</p>
+
+
+</body>-->
+
+<p> Fill out this form created a blog post!<p>
+
+<form action="#" th:action="@{/}" th:object="${blogPost}" method="post">
+
+	<table>
+		
+	<tr>
+	
+		<td>Title</td>
+		<td><input type="text" th:field="*{title}"/></td>
+	</tr>
+	
+	<tr>
+	
+		<td>Author</td>
+		<td><input type="text"th:field="*{author}" /></td>
+	</tr>
+	
+	
+	<tr>
+	
+		<td>Content</td>
+		<td><input type="text"th:field="*{blogEntry}" /></td>
+	</tr>
+	
+	<tr>
+	
+		<td><button type="submit">Submit to blog</button></td>
+	</tr>
+	
+	</table>
+
+
+</form>
+
+</html>
